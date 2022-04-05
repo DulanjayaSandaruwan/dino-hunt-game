@@ -1,14 +1,12 @@
-// var name = prompt("enter your name", "player90874");
-// alert("PLEASE ROTATE YOUR PHONE FOR BEST EXPERIENCE ");
 var c = document.querySelector(".default-charcter img");
 var cl = document.getElementById("left");
 var enemy = document.querySelector(".enemy");
 var scorepoints = document.querySelector(".score");
 var gameoveraudio = new Audio("./audio/game over.wav");
 var score = 0;
-// var cl = document.querySelector(".default-charcter");
 var left = 10;
 var right = 123;
+
 c.classList.remove("jump");
 document.addEventListener("keydown", (e) => {
   console.log(e.keyCode);
@@ -39,12 +37,14 @@ document.addEventListener("keydown", (e) => {
     }
   }
 });
+
 function addjump() {
   c.classList.add("jump");
   setTimeout(() => {
     c.classList.remove("jump");
   }, 2000);
 }
+
 function moveright() {
   if (left > 500) {
     console.log("already right");
@@ -53,6 +53,7 @@ function moveright() {
     cl.style.left = left + "px";
   }
 }
+
 function moveleft() {
   if (left < 10) {
     console.log("already left");
