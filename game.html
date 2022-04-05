@@ -1,165 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
 
     <!-- link css -->
-    <link rel="stylesheet" href="./css/animation.css" />
-    <link rel="stylesheet" href="./css/character.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/game.css" />
+    <link href="./css/animation.css" rel="stylesheet"/>
+    <link href="./css/character.css" rel="stylesheet"/>
+    <link href="./css/style.css" rel="stylesheet"/>
+    <link href="./css/game.css" rel="stylesheet"/>
 
     <!-- link font awsm -->
     <script
-      src="https://kit.fontawesome.com/25e32ff654.js"
-      crossorigin="anonymous"
+            crossorigin="anonymous"
+            src="https://kit.fontawesome.com/25e32ff654.js"
     ></script>
 
     <!-- linking favicon -->
-    <link rel="shortcut icon" href="./enemy/dino.png" type="image/x-icon" />
-   
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./enemy/dino.png" rel="shortcut icon" type="image/x-icon"/>
+
+    <meta charset="UTF-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 
     <title>Dino Hunt</title>
 
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <!-- display instructions -->
-    <div class="alert">
-      <h1>INSTRUCTIONS</h1>
-      <br />
-      <ol>
+<!-- display instructions -->
+<div class="alert">
+    <h1>INSTRUCTIONS</h1>
+    <br/>
+    <ol>
         <li>Press uparrow key to jump the avatar</li>
         <li>Press left arrow key to move left</li>
         <li>Press right arrow key to move right</li>
-        <br />
+        <br/>
         <h1>FOR MOBILE:</h1>
         <li>Touch the avatar to jump</li>
         <li>Touch left screen side to move left</li>
         <li>Touch right screen side of mobile to move right</li>
-      </ol>
-      <h3>PLEASE ROTATE YOUR PHONE !!!! <br />RECOMMENDED--LANDSCAPE</h3>
-      <br />
-      <button onclick="alerthide()">Start</button>
-    </div>
+    </ol>
+    <h3>PLEASE ROTATE YOUR PHONE !!!! <br/>RECOMMENDED--LANDSCAPE</h3>
+    <br/>
+    <button onclick="alerthide()">Start</button>
+</div>
 
-    <!--mobile controls -->
-    <div class="control-box">
-      <div class="left-control" onclick="moveleft()">
+<!--mobile controls -->
+<div class="control-box">
+    <div class="left-control" onclick="moveleft()">
         <i class="fa fa-chevron-left"></i>
-      </div>
-      <div class="right-control" onclick="moveright()">
+    </div>
+    <div class="right-control" onclick="moveright()">
         <i class="fa fa-chevron-right"></i>
-      </div>
     </div>
+</div>
 
-    <!-- main body content -->
-    <div class="content" onclick="toggleplay()">Start Game</div>
+<!-- main body content -->
+<div class="content" onclick="toggleplay()">Start Game</div>
 
-    <!-- top setting button -->
-    <div class="setting display" onclick="togglehide()">
-      <span class="fa fa-pause"></span>
-    </div>
+<!-- top setting button -->
+<div class="setting display" onclick="togglehide()">
+    <span class="fa fa-pause"></span>
+</div>
 
-    <!-- menu
-      
-    click on seeting button this menu will open -->
-    <div class="menu display">
-      <div onclick="togglehide()"><a>Resume</a></div>
-      <div onclick="characterchoice()"><a>Change Character</a></div>
-      <div><a href="./index.html">Exit</a></div>
-    </div>
+<!-- menu
 
-    <div class="setc display">
-      <ul>
-        <li>
-          <img onclick="setcharcater(0)" src="./character/dc.png" alt="" />
-        </li>
-        <li>
-          <img onclick="setcharcater(1)" src="./character/bc1.png" alt="" />
-        </li>
-        <li>
-          <img onclick="setcharcater(2)" src="./character/bc2.png" alt="" />
-        </li>
-        <li>
-          <img onclick="setcharcater(3)" src="./character/bc3.png" alt="" />
-        </li>
-        <li>
-          <img onclick="setcharcater(4)" src="./character/bc4.png" alt="" />
-        </li>
-        <li>
-          <img onclick="setcharcater(5)" src="./character/bc5.png" alt="" />
-        </li>
-        <li>
-          <img onclick="setcharcater(6)" src="./character/bc6.png" alt="" />
-        </li>
-        <li>
-          <img onclick="setcharcater(7)" src="./character/gc1.png" alt="" />
-        </li>
-        <li>
-          <img onclick="setcharcater(8)" src="./character/gc2.png" alt="" />
-        </li>
-        <li>
-          <img onclick="setcharcater(9)" src="./character/gc3.png" alt="" />
-        </li>
-        <li>
-          <img onclick="setcharcater(10)" src="./character/gc4.png" alt="" />
-        </li>
-        <li>
-          <img
-            onclick="setcharcater(11)"
-            src="./character/common_character.png"
-          />
-        </li>
+click on seeting button this menu will open -->
+<div class="menu display">
+    <div onclick="togglehide()"><a>Resume</a></div>
+    <div onclick="characterchoice()"><a>Change Character</a></div>
+    <div><a href="./index.html">Exit</a></div>
+</div>
 
+<div class="setc display">
+    <ul>
         <li>
-          <img
-            onclick="setcharcater(12)"
-            src="./character/common_charcater_2.png"
-            alt=""
-          />
+            <img alt="" onclick="setcharcater(0)" src="./character/dc.png"/>
+        </li>
+        <li>
+            <img alt="" onclick="setcharcater(1)" src="./character/bc1.png"/>
+        </li>
+        <li>
+            <img alt="" onclick="setcharcater(2)" src="./character/bc2.png"/>
+        </li>
+        <li>
+            <img alt="" onclick="setcharcater(3)" src="./character/bc3.png"/>
+        </li>
+        <li>
+            <img alt="" onclick="setcharcater(4)" src="./character/bc4.png"/>
+        </li>
+        <li>
+            <img alt="" onclick="setcharcater(5)" src="./character/bc5.png"/>
+        </li>
+        <li>
+            <img alt="" onclick="setcharcater(6)" src="./character/bc6.png"/>
+        </li>
+        <li>
+            <img alt="" onclick="setcharcater(7)" src="./character/gc1.png"/>
+        </li>
+        <li>
+            <img alt="" onclick="setcharcater(8)" src="./character/gc2.png"/>
+        </li>
+        <li>
+            <img alt="" onclick="setcharcater(9)" src="./character/gc3.png"/>
+        </li>
+        <li>
+            <img alt="" onclick="setcharcater(10)" src="./character/gc4.png"/>
+        </li>
+        <li>
+            <img
+                    onclick="setcharcater(11)"
+                    src="./character/common_character.png"
+            />
         </li>
 
         <li>
-          <img
-            onclick="setcharcater(13)"
-            src="./character/common_charcter3.png"
-            alt=""
-          />
+            <img
+                    alt=""
+                    onclick="setcharcater(12)"
+                    src="./character/common_charcater_2.png"
+            />
         </li>
 
         <li>
-          <img
-            onclick="setcharcater(14)"
-            src="./character/coomon charcter.png"
-            alt=""
-          />
+            <img
+                    alt=""
+                    onclick="setcharcater(13)"
+                    src="./character/common_charcter3.png"
+            />
         </li>
-      </ul>
 
-      <button class="btn" onclick="toggleplay()">Done</button>
+        <li>
+            <img
+                    alt=""
+                    onclick="setcharcater(14)"
+                    src="./character/coomon charcter.png"
+            />
+        </li>
+    </ul>
 
-    </div>
+    <button class="btn" onclick="toggleplay()">Done</button>
 
-    <div class="main">
-      <div class="container">
+</div>
+
+<div class="main">
+    <div class="container">
         <div>Score=<span class="score display">0</span></div>
-      </div>
-      <div class="stage-1"></div>
-      <div class="default-charcter" onclick="addjump()">
-        <img class="left" id="left" src="./character/bc2.png" alt="" />
-      </div>
-      <div class="enemy"></div>
-
-      <div class="footer"></div>
     </div>
+    <div class="stage-1"></div>
+    <div class="default-charcter" onclick="addjump()">
+        <img alt="" class="left" id="left" src="./character/bc2.png"/>
+    </div>
+    <div class="enemy"></div>
 
-    <script src="./js/control.js"></script>
-    <script src="./js/game.js"></script>
+    <div class="footer"></div>
+</div>
 
-  </body>
-  
+<script src="./js/control.js"></script>
+<script src="./js/game.js"></script>
+
+</body>
+
 </html>

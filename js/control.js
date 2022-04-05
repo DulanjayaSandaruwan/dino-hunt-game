@@ -9,56 +9,56 @@ var right = 123;
 
 c.classList.remove("jump");
 document.addEventListener("keydown", (e) => {
-  console.log(e.keyCode);
-  c.classList.remove("jump");
-  if (e.keyCode == "38") {
-    c.classList.add("jump");
-    setTimeout(() => {
-      c.classList.remove("jump");
-    }, 2000);
-  }
-  console.log(cl.style.left);
+    console.log(e.keyCode);
+    c.classList.remove("jump");
+    if (e.keyCode == "38") {
+        c.classList.add("jump");
+        setTimeout(() => {
+            c.classList.remove("jump");
+        }, 2000);
+    }
+    console.log(cl.style.left);
 
-  if (e.keyCode == 37) {
-    if (left < 10) {
-      console.log("already left");
-    } else {
-      left = left - 5;
-      cl.style.left = left + "px";
+    if (e.keyCode == 37) {
+        if (left < 10) {
+            console.log("already left");
+        } else {
+            left = left - 5;
+            cl.style.left = left + "px";
+        }
     }
-  }
-  console.log(cl.style.right);
-  if (e.keyCode == 39) {
-    if (left > 1000) {
-      console.log("already right");
-    } else {
-      left = left + 5;
-      cl.style.left = left + "px";
+    console.log(cl.style.right);
+    if (e.keyCode == 39) {
+        if (left > 1000) {
+            console.log("already right");
+        } else {
+            left = left + 5;
+            cl.style.left = left + "px";
+        }
     }
-  }
 });
 
 function addjump() {
-  c.classList.add("jump");
-  setTimeout(() => {
-    c.classList.remove("jump");
-  }, 2000);
+    c.classList.add("jump");
+    setTimeout(() => {
+        c.classList.remove("jump");
+    }, 2000);
 }
 
 function moveright() {
-  if (left > 500) {
-    console.log("already right");
-  } else {
-    left = left + 5;
-    cl.style.left = left + "px";
-  }
+    if (left > 500) {
+        console.log("already right");
+    } else {
+        left = left + 5;
+        cl.style.left = left + "px";
+    }
 }
 
 function moveleft() {
-  if (left < 10) {
-    console.log("already left");
-  } else {
-    left = left - 5;
-    cl.style.left = left + "px";
-  }
+    if (left < 10) {
+        console.log("already left");
+    } else {
+        left = left - 5;
+        cl.style.left = left + "px";
+    }
 }
